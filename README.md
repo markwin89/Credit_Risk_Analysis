@@ -54,7 +54,7 @@ Creating multiple machine learning tool to classify and predict high and low ris
 ![4 Easy Ensemble AdaBoost Classifier](https://user-images.githubusercontent.com/101272613/179426594-9dcd6ef5-3493-42be-b01b-7a5578d8ba54.PNG)
 
 ## Summary
-Overall, the best algorithms to use in this instance is the Balanced Random Forest Classifier.  Potentially Easy Ensemble AdaBoost Classifier would be the best algorithms if the current package fixed the below error.  Balanced Random Forest Classifier was the only one to produce high_risk precision above .5 while the rest was around 0.01.  Precision should be the main factor since we want to lower the false positives.  Hypothetically, a false positive would be like giving a loan to high risk status.  Most business would rather receive more false negatives than false positivies so the the loans don't default as frequent.     
+Overall, the best algorithms to use in this instance is the Balanced Random Forest Classifier.  Potentially Easy Ensemble AdaBoost Classifier would be the best algorithms if the most recent package fixed the below error.  Balanced Random Forest Classifier was the only one to produce high_risk precision above .5 while the rest was around 0.01.  Precision should be the main factor since we want to lower the false positives.  Hypothetically, a false positive would be like giving a loan to high risk status.  Most business would rather receive more false negatives than false positivies so the the loans don't default as frequent.     
 
 
 Error:
