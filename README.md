@@ -38,11 +38,11 @@ Creating multiple machine learning tool to classify and predict high and low ris
 ![3 Combination (Over and Under) Sampling](https://user-images.githubusercontent.com/101272613/179426589-194e80a7-118a-411e-adbf-16c643a43d80.PNG)
 
 ### Balanced Random Forest Classifier
-  - Precision: High_risk - 0.01 Low_risk - 1.00
+  - Precision: High_risk - 0.73 Low_risk - 1.00
     - Low risk has a high precision while the High risk is a very low precision at 0.01.
   - Accuracy: .59
-  - Recall: High_risk - 0.62 Low_risk - 0.42
-  - F1 score: High_risk - 0.01 Low_risk - 0.59
+  - Recall: High_risk - 0.25 Low_risk - 1.00 
+  - F1 score: High_risk - 0.37 Low_risk - 1.00
 ![3 Balanced Random Forest Classifier](https://user-images.githubusercontent.com/101272613/179426583-36a3a695-ef2c-4f49-8d41-5d9e8898a00e.PNG)
 
 ### Easy Ensemble AdaBoost Classifier
@@ -54,5 +54,9 @@ Creating multiple machine learning tool to classify and predict high and low ris
 ![4 Easy Ensemble AdaBoost Classifier](https://user-images.githubusercontent.com/101272613/179426594-9dcd6ef5-3493-42be-b01b-7a5578d8ba54.PNG)
 
 ## Summary
-Overall, the best algorithms to use in this instance is the Easy Ensemble AdaBoost Classifier.  It was the only one to produce high_risk precision above .5 while the rest was 
+Overall, the best algorithms to use in this instance is the Balanced Random Forest Classifier.  Potentially Easy Ensemble AdaBoost Classifier would be the best algorithms if the current package fixed the below error.  Balanced Random Forest Classifier was the only one to produce high_risk precision above .5 while the rest was around 0.01.  Precision should be the main factor since we want to lower the false positives.  Hypothetically, a false positive would be like giving a loan to high risk status.  Most business would rather receive more false negatives than false positivies so the the loans don't default as frequent.     
+
+
+Error:
+![image](https://user-images.githubusercontent.com/101272613/179428888-73641ca3-57a8-4c1d-bc0f-6c605da2a731.png)
 
